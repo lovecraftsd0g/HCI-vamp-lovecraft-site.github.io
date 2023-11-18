@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <style>
+            .subor{
+                display: none;
+            }
+            .subor1{
+                display: none;
+            }
+            .subor2{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="the_one">
+        <div class="w3-quarter">
+            <button class="example">mouseenter</button>
+            <div class="subor">
+                <p>you found me</p>
+                <p>you found me</p>
+            </div>
+        </div>
+        
+        <div class="w3-quarter">
+            <button class="example1">mouseenter</button>
+        
+            <p class="subor1">you found me</p>
+            <p class="subor1">you found me</p>
+            <p class="subor1">you found me</p>
+        </div>
+        
+        <div class="w3-quarter">
+            <button class="example2">mouseenter</button>
+        
+            <p class="subor2">you found me</p>
+            <p class="subor2">you found me</p>
+            <p class="subor2">you found me</p>
+            <p class="subor2">you found me</p>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('.example').mouseenter(function(){
+                $('.subor').show();
+            })
+            $('.example').mouseleave(function(){
+                $('.subor').hide();
+            })
+            $('.example1').mouseenter(function(){
+                $('.subor1').show();
+            })
+            $('.example1').mouseleave(function(){
+                $('.subor1').hide();
+            })
+            $('.example2').mouseenter(function(){
+                $('.subor2').show();
+            })
+            $('.example2').mouseleave(function(){
+                $('.subor2').hide();
+            })
+        })
+    </script>
+    </body>
+</html>
